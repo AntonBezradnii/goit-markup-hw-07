@@ -99,7 +99,7 @@ ul{
         justify-content: center;
     }
     .input-text {
-        width: 396px;
+        width: 100%;
     }
     .form-container-btn {
         display: flex;
@@ -621,14 +621,83 @@ img{
     text-decoration: none;
 }
 .section-hero {
-    background-image: linear-gradient(to right, RGBA(46,47,66,0.7), 
-    RGBA(46,47,66,0.7)), 
-    url(../images/peopleoffice1.jpg);
     max-width: 1440px;
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;            
 }
+@media screen and (max-width: 767px) {
+    .section-hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Hero-one-x-mobile.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Hero-two-x-mobile.jpg);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .section-hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Hero-one-x-tablet.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Hero-two-x-tablet.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .section-hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Hero-one-x-desktop.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Hero-two-x-desktop.jpg);
+    }
+  }
 
 .maintitle {
     line-height: 1.1;
